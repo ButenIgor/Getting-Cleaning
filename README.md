@@ -2,6 +2,7 @@ Code explanations
 
 
 ##Reading features and activity lables
+
 features<-read.table("features.txt")
 activity_label<-read.table("activity_labels.txt")
 
