@@ -22,9 +22,11 @@ train_headed<-rbind(features[0,2],train)
 
 ##Reading set of test data
 test<-read.table("test/X_test.txt",col.names=label[,2])
+
 ##Reading labels for test set and renaming in "Label"
 label_test<-read.table("test/y_test.txt")
 label_test_name<-rename(label_test,"Label"="V1")
+
 ##Reading PersonID for test data and renaming in "Subject"
 subject_test<-read.table("test/subject_test.txt")
 subject_test_name<-rename(subject_test,"Subject"="V1")
