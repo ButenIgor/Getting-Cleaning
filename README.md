@@ -1,14 +1,15 @@
 Code explanations
 
 
+```R 
 ##Reading features and activity lables
-
 features<-read.table("features.txt")
 activity_label<-read.table("activity_labels.txt")
-
+```
+```R
 ##Reading set of training data
 train<-read.table("train/X_train.txt",col.names=label[,2])
-
+```
 ##Reading labels for training set and renaming in "Label"
 label_train<-read.table("train/y_train.txt")
 label_train_name<-rename(label_train,"Label"="V1")
